@@ -1,6 +1,7 @@
 # TOP ruby projects
 
-## ruby-caesar-cipher
-## substrings
-## stock picker
+ruby-caesar-cipher
+sub strings
+stock picker
+bubble sort
 
