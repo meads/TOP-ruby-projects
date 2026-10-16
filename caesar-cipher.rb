@@ -1,8 +1,6 @@
-
-
 def caesar_cipher(phrase, shift_factor)
-  lowercase_alphabet = ('a'..'z').to_a
-  uppercase_alphabet = ('A'..'Z').to_a
+  lowercase_alphabet = ("a".."z").to_a
+  uppercase_alphabet = ("A".."Z").to_a
   alphabet_length = lowercase_alphabet.length
 
   enc_phrase = phrase.chars.map do |char|

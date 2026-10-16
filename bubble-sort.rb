@@ -1,5 +1,3 @@
-
-
 def bubble_sort(array)
   begin
     swapped = false
@@ -8,9 +6,9 @@ def bubble_sort(array)
         array[i + 1], array[i] = array[i], array[i + 1]
         swapped = true
       end
-    end  
+    end
   end while swapped
-  
+
   array
 end
 
@@ -27,5 +25,5 @@ sorted = bubble_sort(numbers)
 puts "sorted -> #{sorted}"    # sorted -> [1, 2, 3, 4, 5, 6]
 
 numbers = [4, 3, 78, 2, 0, 2]
-sorted = bubble_sort(numbers) 
+sorted = bubble_sort(numbers)
 puts "sorted -> #{sorted}"    # sorted -> [0, 2, 2, 3, 4, 78]

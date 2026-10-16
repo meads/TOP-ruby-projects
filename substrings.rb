@@ -1,8 +1,6 @@
-
-
 def substrings(word, dictionary)
   matches_hash = {}
-  
+
   dictionary.each do |term|
     matches = word.downcase.scan(term)
 
@@ -10,12 +8,11 @@ def substrings(word, dictionary)
       matches_hash[term] = matches.length
     end
   end
-  
+
   matches_hash
 end
 
-
-dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
+dictionary = ["below", "down", "go", "going", "horn", "how", "howdy", "it", "i", "low", "own", "part", "partner", "sit"]
 result = substrings("below", dictionary)
 puts result
 
