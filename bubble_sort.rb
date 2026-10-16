@@ -1,5 +1,5 @@
 def bubble_sort(array)
-  begin
+  loop do
     swapped = false
     (array.length - 1).times do |i|
       if array[i] > array[i + 1]
@@ -7,7 +7,8 @@ def bubble_sort(array)
         swapped = true
       end
     end
-  end while swapped
+    break unless swapped
+  end
 
   array
 end
